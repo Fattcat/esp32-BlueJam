@@ -1,5 +1,7 @@
 # esp32-BlueJam
 ESP32 Code for DISTURB Bluetooth devices.
+- -- Necessary INFO --
+- idk why, but it disturb WiFi Signal also 
 # INSTALLATION
 - Install THIS libraries:
 ```
