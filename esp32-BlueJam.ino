@@ -29,15 +29,12 @@
 // ------------------------              ↑
 
 SPIClass *hp = nullptr;
-
 RF24 radio(16, 15, 16000000);
 
 byte i = 45;
 
 unsigned int flag = 0;
-
 ezButton toggleSwitch(33);
-
 
 void setup(void) {
   esp_bt_controller_deinit();
@@ -94,12 +91,8 @@ void one() {
 }
 
 /*YOU CAN DO RANDOM CHANNEL 
-
 radio.setChannel(random(79));
 */
-
-
-
 
 void loop(void) {
 
@@ -111,7 +104,6 @@ void loop(void) {
     Serial.println("two");*/
 
   int state = toggleSwitch.getState();
-
 
   if (state == HIGH)
     two();
